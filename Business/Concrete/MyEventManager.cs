@@ -64,7 +64,7 @@ namespace Business.Concrete
         {
             var result = BusinessRules.Run();
             if (result != null) return new ErrorDataResult<List<MyEvent>>();
-            return new SuccessDataResult<List<MyEvent>>(_myEventDal.GetAll(e => e.CreaterId == createrId));
+            return new SuccessDataResult<List<MyEvent>>(_myEventDal.GetAll(e => e.UserId == createrId));
         }
 
         public IResult Update(MyEvent myEvent)

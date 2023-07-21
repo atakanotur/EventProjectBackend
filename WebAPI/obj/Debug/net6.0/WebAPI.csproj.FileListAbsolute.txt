@@ -3,7 +3,6 @@ C:\Users\atakan\source\repos\EventProject\WebAPI\obj\Debug\net6.0\WebAPI.Generat
 C:\Users\atakan\source\repos\EventProject\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfoInputs.cache
 C:\Users\atakan\source\repos\EventProject\WebAPI\obj\Debug\net6.0\WebAPI.AssemblyInfo.cs
 C:\Users\atakan\source\repos\EventProject\WebAPI\obj\Debug\net6.0\WebAPI.csproj.CoreCompileInputs.cache
-C:\Users\atakan\source\repos\EventProject\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\atakan\source\repos\EventProject\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\atakan\source\repos\EventProject\WebAPI\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\atakan\source\repos\EventProject\WebAPI\bin\Debug\net6.0\appsettings.json
@@ -95,3 +94,4 @@ C:\Users\atakan\source\repos\EventProject\WebAPI\obj\Debug\net6.0\refint\WebAPI.
 C:\Users\atakan\source\repos\EventProject\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\atakan\source\repos\EventProject\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\atakan\source\repos\EventProject\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\atakan\source\repos\EventProject\WebAPI\obj\Debug\net6.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs

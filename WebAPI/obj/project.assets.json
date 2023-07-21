@@ -4605,8 +4605,8 @@
     },
     "Core/1.0.0": {
       "type": "project",
-      "path": "../../MyFinalProject/Core/Core.csproj",
-      "msbuildProject": "../../MyFinalProject/Core/Core.csproj"
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
     },
     "DataAccess/1.0.0": {
       "type": "project",
@@ -4651,7 +4651,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4661,14 +4661,14 @@
             "C:\\Users\\atakan\\source\\repos\\EventProject\\Business\\Business.csproj": {
               "projectPath": "C:\\Users\\atakan\\source\\repos\\EventProject\\Business\\Business.csproj"
             },
+            "C:\\Users\\atakan\\source\\repos\\EventProject\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\atakan\\source\\repos\\EventProject\\Core\\Core.csproj"
+            },
             "C:\\Users\\atakan\\source\\repos\\EventProject\\DataAccess\\DataAccess.csproj": {
               "projectPath": "C:\\Users\\atakan\\source\\repos\\EventProject\\DataAccess\\DataAccess.csproj"
             },
             "C:\\Users\\atakan\\source\\repos\\EventProject\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\atakan\\source\\repos\\EventProject\\Entities\\Entities.csproj"
-            },
-            "C:\\Users\\atakan\\source\\repos\\MyFinalProject\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\atakan\\source\\repos\\MyFinalProject\\Core\\Core.csproj"
             }
           }
         }
@@ -4715,7 +4715,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
