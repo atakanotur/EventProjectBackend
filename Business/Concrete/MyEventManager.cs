@@ -26,13 +26,11 @@ namespace Business.Concrete
             _myEventDal = myEventDal;
         }
         [ValidationAspect(typeof(MyEventValidator))]
-        [CacheRemoveAspect("IMyEventService.Get")]
-        [PerformanceAspect(5)]
         public IResult Add(MyEvent myEvent)
         {
-            var result = BusinessRules.Run(
-                CheckIfEventDateIsLaterDate(myEvent.Date),
-                CheckIfEventExist(myEvent.Id));
+            var result = BusinessRules.Run();
+                //CheckIfEventDateIsLaterDate(myEvent.Date),
+                //CheckIfEventExist(myEvent.Id));
             if (result != null) return new ErrorResult(Messages.EventNotCreated);
             _myEventDal.Add(myEvent);
             return new SuccessResult(Messages.EventCreated);

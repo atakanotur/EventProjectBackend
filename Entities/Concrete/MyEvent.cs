@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entities.Concrete
 {
-    public class MyEvent: IEntity
+    public class MyEvent : IEntity
     {
         public int Id { get; set; }
         public int UserId { get; set; }
@@ -17,5 +17,6 @@ namespace Entities.Concrete
         public DateTime Date { get; set; }
         public int ParticipantLimit { get; set; }
         public int ParticipantCount { get; set; }
+        
     }
 }
