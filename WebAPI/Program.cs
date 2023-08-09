@@ -59,29 +59,24 @@ namespace WebAPI
             {
                 options.AddPolicy("AllowOrigin",
                     builder => builder
-                   .WithOrigins(
-                    "http://10.0.2.2:8081",
+                    .WithOrigins("http://10.0.2.2:8081", 
+                    "https://10.0.2.2:8081", 
+                    "https://localhost:5554", 
+                    "https://192.168.1.103:5554", 
+                    "http://localhost:5554", 
+                    "http://192.168.1.103:5554",
                     "https://10.0.2.2:8081",
-                    "https://10.0.2.2:8081",
-                    "http://10.0.2.2:3000",
-                    "http://10.0.2.2:7204",
-                    "https://10.0.2.2:7204",
-                    "https://localhost:5554",
-                    "http://localhost:5554",
-                    "https://localhost:7204",
-                    "http://localhost:7204",
-                    "https://localhost:8081",
-                    "https://localhost:8080",
-                    "https://192.168.1.101:5554",
-                    "http://192.168.1.101:5554",
-                    "http://192.168.1.101:8081",
-                    "https://127.0.0.1:7204",
-                    "https://127.0.0.1:8080",
-                    "https://127.0.0.1:8081",
-                    "https://95.70.132.121:7204",
-                    "https://95.70.132.121:8081",
-                    "https://95.70.132.121:8080"
-                    )
+                    "https://localhost:7204", 
+                    "https://127.0.0.1:7204", 
+                    "https://95.70.132.121:7204", 
+                    "https://localhost:8081", 
+                    "https://127.0.0.1:8081", 
+                    "https://95.70.132.121:8081", 
+                    "https://localhost:8080", 
+                    "https://127.0.0.1:8080", 
+                    "https://95.70.132.121:8080", 
+                    "http://10.0.2.2:3000", 
+                    "http://192.168.1.103:8081")
                     .AllowAnyMethod()
                     .AllowAnyHeader()
                     .AllowCredentials()
@@ -91,32 +86,28 @@ namespace WebAPI
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+
             var app = builder.Build();
 
             app.UseCors(builder => builder
-             .WithOrigins(
-                    "http://10.0.2.2:8081",
+             .WithOrigins("http://10.0.2.2:8081",
                     "https://10.0.2.2:8081",
-                    "https://10.0.2.2:8081",
-                    "http://10.0.2.2:3000",
-                    "http://10.0.2.2:7204",
-                    "https://10.0.2.2:7204",
                     "https://localhost:5554",
+                    "https://192.168.1.103:5554",
                     "http://localhost:5554",
+                    "http://192.168.1.103:5554",
+                    "https://10.0.2.2:8081",
                     "https://localhost:7204",
-                    "http://localhost:7204",
-                    "https://localhost:8081",
-                    "https://localhost:8080",
-                    "https://192.168.1.101:5554",
-                    "http://192.168.1.101:5554",
-                    "http://192.168.1.101:8081",
                     "https://127.0.0.1:7204",
-                    "https://127.0.0.1:8080",
-                    "https://127.0.0.1:8081",
                     "https://95.70.132.121:7204",
+                    "https://localhost:8081",
+                    "https://127.0.0.1:8081",
                     "https://95.70.132.121:8081",
-                    "https://95.70.132.121:8080"
-                    )
+                    "https://localhost:8080",
+                    "https://127.0.0.1:8080",
+                    "https://95.70.132.121:8080",
+                    "http://10.0.2.2:3000",
+                    "http://192.168.1.103:8081")
             .AllowAnyHeader()
             .AllowCredentials()
             .AllowAnyMethod());
