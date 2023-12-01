@@ -3844,19 +3844,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\atakan\\.nuget\\packages\\": {}
+    "C:\\Users\\ataka\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\atakan\\source\\repos\\EventProject\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\ataka\\Source\\Repos\\EventProjectBackend\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\atakan\\source\\repos\\EventProject\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\atakan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\atakan\\source\\repos\\EventProject\\Core\\obj\\",
+      "projectPath": "C:\\Users\\ataka\\Source\\Repos\\EventProjectBackend\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\ataka\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ataka\\Source\\Repos\\EventProjectBackend\\Core\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\atakan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ataka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3864,6 +3869,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3947,7 +3953,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

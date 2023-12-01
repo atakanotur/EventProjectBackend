@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Core.Utilities.Results;
 using Entities.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -33,11 +34,12 @@ namespace WebAPI.Controllers
         {
             var userToLogin = _authService.Login(userForLoginDto);
             if (!userToLogin.Success) return BadRequest(userToLogin.Message);
-           
+
             var result = _authService.CreateAccessToken(userToLogin.Data);
-            if (result.Success) return Ok(result.Data);
-          
+            var authenticationResult = new AuthenticationResult(userToLogin.Data.Id, userToLogin.Data.Email, result.Data);
+            
+            if (result.Success) return Ok(authenticationResult);
             return BadRequest(result.Message);
-}
+        }
     }
 }

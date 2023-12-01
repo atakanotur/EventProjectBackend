@@ -11,10 +11,14 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class MyEventDbContext : DbContext
     {
+        //Server=hostsql1.isimtescil.net;Database=EventProject;User Id = atakan; Password=xvH317x&1;
+        //Server = (localdb)\mssqllocaldb; Database = EventProject; Trusted_Connection = True;
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"server=(localdb)\mssqllocaldb;database=EventProject;Trusted_Connection=true");
-
+            optionsBuilder.UseSqlServer(@"Data Source=93.89.230.2;Initial Catalog=EventProject;Integrated Security=False;User ID=atakan; Password=xvH317x&1;Connect Timeout=30;Encrypt=False;Packet Size=8192", options =>
+            {
+                options.EnableRetryOnFailure(maxRetryCount: 5, maxRetryDelay: TimeSpan.FromSeconds(10), errorNumbersToAdd: null);
+            });
         }
 
         public DbSet<MyEvent> MyEvents { get; set; }

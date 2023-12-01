@@ -13,6 +13,7 @@ namespace Business.Abstract
         IDataResult<List<Participant>> GetAll();
         IDataResult<List<Participant>> GetByMyEventId(int myEventId);
         IDataResult<List<Participant>> GetByUserId(int userId);
+        IDataResult<List<int>> GetAttendedMyEventIds(int userId);
         IResult Add(Participant participant);
         IResult Delete(Participant participant);
         IResult Update(Participant participant);

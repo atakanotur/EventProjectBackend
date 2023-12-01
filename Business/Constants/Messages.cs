@@ -20,27 +20,34 @@ namespace Business.Constants
         public static string AccessTokenCreated = "Access Token oluşturuldu";
         //MyEvent
         public static string EventNotCreated = "Etkinlik oluşturulamadı!";
-        public static string EventCreated = "Etkinlik başarıylaoluşturuldu!";
+        public static string EventCreated = "Etkinlik başarıyla oluşturuldu!";
+        public static string EventNotUpdated = "Etkinlik güncellenemedi!";
+        public static string EventUpdated = "Etkinlik başarıyla güncellendi!";
         public static string EventNotDeleted = "Etkinlik silinemedi!";
         public static string EventDeleted = "Etkinlik başarıyla silindi!";
         public static string EventNotFound = "Etkinlik bulunamadı";
         public static string EventFound = "Etkinlik bulundu!";
-        public static string EventNotListed = "Etkinlik oluşturulamadı!";
-        public static string EventListed = "Etkinlik oluşturuldu!";
+        public static string EventsNotListed = "Etkinlik oluşturulamadı!";
+        public static string EventsListed = "Etkinlik oluşturuldu!";
         public static string EventAlreadyExists = "Bu etkinlik zaten var!";
+        public static string EventDateIsInvalid = "Etkinlik tarihi geçersiz!";
+        public static string JoinedTheEvent = "Etkinliğe katılındı!";
+        public static string FailedToJoinEvent = "Etkinliğe katılma başarısız!";
+        public static string LeavedTheEvent = "Etkinlikten çıkıldı!";
+        public static string FailedToLeaveEvent = "Etkinlikten çıkma başarısız!";
         //MyEventParticipant
         public static string ParticipantLimitExceeded = "Katılımcı limiti aşıldı!";
         public static string ParticipantExist = "Böyle bir katılımcı zaten var!";
         public static string ParticipantUpdated = "Katılımcı başarıyla güncellendi!";
         public static string ParticipantNotUpdated = "Katılımcı güncellenemedi!";
-        public static string ParticipantListed = "Katılımcılar listelendi!";
-        public static string ParticipantNotListed = "Katılımcılar listenemedi!";
+        public static string ParticipantsListed = "Katılımcılar listelendi!";
+        public static string ParticipantsNotListed = "Katılımcılar listenemedi!";
         public static string ParticipantDeleted = "Katılımcı başarıyla silindi!";
         public static string ParticipantNotDeleted = "Katılımcı silinemedi!";
         public static string ParticipantAdded = "Katılımcı başarıyla eklendi!";
         public static string ParticipantNotAdded = "Katılımcı eklenemedi!";
-        public static string EventsNotListed = "Etkinlikler listelenemedi!";
-        public static string EventsListed = "Etkinlikler listelendi!";
+        public static string MyEventsIdsListed = "Event Id'leri listelendi!";
+        public static string MyEventsIdsNotListed = "Event Id'leri listelenmedi!";
         //MyEventType
         public static string MyEventTypeUpdated = "Etkinlik türü başarıyla Güncellendi!";
         public static string MyEventTypeNotUpdated = "Etkinlik türü güncellenmedi!";

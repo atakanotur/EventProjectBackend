@@ -13,6 +13,7 @@ namespace Business.ValidationRules.FluentValidation
         public MyEventValidator()
         {
             RuleFor(e => e.Name).NotEmpty();
+            RuleFor(e => e.Address).NotEmpty();
             RuleFor(e => e.MyEventTypeId).NotEmpty();
             RuleFor(e => e.UserId).NotEmpty();
         }

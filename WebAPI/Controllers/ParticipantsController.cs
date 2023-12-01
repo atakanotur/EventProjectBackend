@@ -38,6 +38,14 @@ namespace WebAPI.Controllers
             return BadRequest(result.Message);
         }
 
+        [HttpGet("getattendemyevents")]
+        public IActionResult GetAttendedMyEvents(int userId)
+        {
+            var result = _participantService.GetAttendedMyEventIds(userId);
+            if (result.Success) return Ok(result.Data.ToList());
+            return BadRequest(result.Message);
+        }
+
         [HttpPost("add")]
         public IActionResult Add(Participant participant)
         {
