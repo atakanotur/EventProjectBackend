@@ -38,7 +38,7 @@ namespace WebAPI.Controllers
         [HttpGet("getbyuserid")]
         public IActionResult GetByUserId(int userId)
         {
-            var result = _myEventService.GetById(userId);
+            var result = _myEventService.GetByUserId(userId);
             if (result.Success) return Ok(result.Data);
             return BadRequest(result.Message);
         }
