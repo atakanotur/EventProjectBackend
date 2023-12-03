@@ -112,8 +112,7 @@ namespace Business.Concrete
         {
             var result = BusinessRules.Run();
             if (result != null) return new ErrorResult(Messages.FailedToLeaveEvent);
-            Participant participantToLeave = _participantService.GetByUserId(participant.UserId).Data.First(x => x.MyEventId == participant.MyEventId);
-            _participantService.Delete(participantToLeave);
+            _participantService.Delete(participant);
             MyEvent myEvent = _myEventDal.Get(e => e.Id == participant.MyEventId);
             myEvent.ParticipantCount--;
             _myEventDal.Update(myEvent);

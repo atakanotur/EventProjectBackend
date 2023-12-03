@@ -37,8 +37,8 @@ namespace Business.Concrete
         {
             var result = BusinessRules.Run();
             if (result != null) return new ErrorResult(Messages.ParticipantNotDeleted);
-            
-            _participantDal.Delete(participant);
+            Participant participantToLeave = _participantDal.Get(p => p.UserId == participant.UserId && p.MyEventId == participant.MyEventId);
+            _participantDal.Delete(participantToLeave);
             return new SuccessResult(Messages.ParticipantDeleted);
         }
         public IDataResult<List<Participant>> GetAll()
