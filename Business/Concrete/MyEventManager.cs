@@ -107,12 +107,13 @@ namespace Business.Concrete
             _myEventDal.Update(myEvent);
             return new SuccessResult(Messages.JoinedTheEvent);
         }
-
+        
         public IResult LeaveMyEvent(Participant participant)
         {
             var result = BusinessRules.Run();
             if (result != null) return new ErrorResult(Messages.FailedToLeaveEvent);
-            _participantService.Delete(participant);
+            Participant participantToLeave = _participantService.GetByUserId(participant.UserId).Data.First(x => x.MyEventId == participant.MyEventId);
+            _participantService.Delete(participantToLeave);
             MyEvent myEvent = _myEventDal.Get(e => e.Id == participant.MyEventId);
             myEvent.ParticipantCount--;
             _myEventDal.Update(myEvent);

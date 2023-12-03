@@ -37,6 +37,7 @@ namespace Business.Concrete
         {
             var result = BusinessRules.Run();
             if (result != null) return new ErrorResult(Messages.ParticipantNotDeleted);
+            
             _participantDal.Delete(participant);
             return new SuccessResult(Messages.ParticipantDeleted);
         }
