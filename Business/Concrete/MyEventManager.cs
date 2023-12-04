@@ -32,8 +32,7 @@ namespace Business.Concrete
         public IResult Add(MyEvent myEvent)
         {
             var result = BusinessRules.Run(
-                CheckIfEventDateIsLaterDate(myEvent.Date),
-                CheckIfEventExist(myEvent.Id)
+                CheckIfEventDateIsLaterDate(myEvent.Date)
                 );
             if (result != null) return new ErrorResult(Messages.EventNotCreated);
             _myEventDal.Add(myEvent);
@@ -122,13 +121,6 @@ namespace Business.Concrete
         private IResult CheckIfEventDateIsLaterDate(DateTime date)
         {
             if(date < DateTime.Now) return new ErrorResult(Messages.EventDateIsInvalid);
-            return new SuccessResult();
-        }
-
-        private IResult CheckIfEventExist(int myEventId)
-        {
-            var result = _myEventDal.GetAll(e => e.Id == myEventId);
-            if (result != null) return new ErrorResult(Messages.EventAlreadyExists);
             return new SuccessResult();
         }
 
