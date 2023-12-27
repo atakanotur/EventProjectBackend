@@ -12,8 +12,8 @@ namespace Business.ValidationRules.FluentValidation
     {
         public MyEventParticipantValidator()
         {
-            RuleFor(p => p.MyEventId).NotEmpty();
-            RuleFor(p => p.UserId).NotEmpty();
+            RuleFor(p => p.MyEventId).NotEmpty().WithMessage("Bu alan boş olamaz!");
+            RuleFor(p => p.UserId).NotEmpty().WithMessage("Bu alan boş olamaz!");
         }
     }
 }

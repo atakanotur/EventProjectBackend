@@ -11,5 +11,7 @@ namespace Entities.DTOs
     {
         public int ParticipantId { get; set; }
         public int MyEventId { get; set; }
+        public string participantFirstName { get; set; }
+        public string participantLastName { get; set;}
     }
 }

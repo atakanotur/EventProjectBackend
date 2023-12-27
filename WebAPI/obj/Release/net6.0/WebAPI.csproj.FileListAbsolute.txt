@@ -95,3 +95,4 @@ C:\Users\ataka\source\repos\EventProjectBackend\WebAPI\obj\Release\net6.0\refint
 C:\Users\ataka\source\repos\EventProjectBackend\WebAPI\obj\Release\net6.0\WebAPI.pdb
 C:\Users\ataka\source\repos\EventProjectBackend\WebAPI\obj\Release\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\ataka\source\repos\EventProjectBackend\WebAPI\obj\Release\net6.0\ref\WebAPI.dll
+C:\Users\ataka\source\repos\EventProjectBackend\WebAPI\bin\Release\net6.0\WebAPI.staticwebassets.runtime.json

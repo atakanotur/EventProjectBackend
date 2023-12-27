@@ -12,7 +12,7 @@ namespace Business.ValidationRules.FluentValidation
     {
         public MyEventTypeValidator()
         {
-            RuleFor(e => e.Name).NotEmpty();
+            RuleFor(e => e.Name).NotEmpty().WithMessage("Bu alan boş olamaz!");
         }
     }
 }

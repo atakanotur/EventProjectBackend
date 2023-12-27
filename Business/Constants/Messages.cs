@@ -66,6 +66,8 @@ namespace Business.Constants
         public static string UserUpdated = "Kullanıcı başarıyla güncellendi!";
         public static string UserNotDeleted = "Kullanıcı silinemedi!";
         public static string UserDeleted = "Kullanıcı başarıyla silindi!";
+        public static string UsersListed = "Kullanıcılar başarıyla listelendi!";
+        public static string UsersNotListed = "Kullanıcılar listelenemedi!";
         //--------------------------------
         public static string Message = "Message";
 

@@ -1,6 +1,7 @@
 ﻿using Core.Entities.Concrete;
 using Core.Utilities.Results;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,6 @@ namespace Business.Abstract
         IResult Add(User user);
         IDataResult<List<User>> GetAll();
         IDataResult<User> GetByEmail(string email);
+        IDataResult<List<UserProfileDetailDto>> GetByMyEventId(int myEventId);
     }
 }

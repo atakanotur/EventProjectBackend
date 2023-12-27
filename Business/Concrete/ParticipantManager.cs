@@ -47,28 +47,24 @@ namespace Business.Concrete
             if (result != null) return new ErrorDataResult<List<Participant>>(Messages.ParticipantsNotListed);
             return new SuccessDataResult<List<Participant>>(_participantDal.GetAll(), Messages.ParticipantsListed);
         }
-
         public IDataResult<List<int>> GetAttendedMyEventIds(int userId)
         {
             var result = BusinessRules.Run();
             if (result != null) return new ErrorDataResult<List<int>>(Messages.MyEventsIdsNotListed);
             return new SuccessDataResult<List<int>>(_participantDal.GetAll(p => p.UserId == userId).Select(p => p.MyEventId).ToList(),Messages.MyEventsIdsListed);
         }
-
         public IDataResult<List<Participant>> GetByMyEventId(int myEventId)
         {
             var result = BusinessRules.Run();
             if (result != null) return new ErrorDataResult<List<Participant>>(Messages.ParticipantsNotListed);
             return new SuccessDataResult<List<Participant>>(_participantDal.GetAll(p => p.MyEventId == myEventId).ToList(),Messages.ParticipantsListed);
         }
-
         public IDataResult<List<Participant>> GetByUserId(int userId)
         {
             var result = BusinessRules.Run();
             if (result != null) return new ErrorDataResult<List<Participant>>(Messages.ParticipantsNotListed);
             return new SuccessDataResult<List<Participant>>(_participantDal.GetAll(p => p.UserId == userId).ToList(), Messages.ParticipantsListed);
         }
-
         public IResult Update(Participant participant)
         {
             var result = BusinessRules.Run();
@@ -76,7 +72,6 @@ namespace Business.Concrete
             _participantDal.Update(participant);
             return new SuccessResult(Messages.ParticipantUpdated);
         }
-
         private IResult CheckIfParticipantExist (Participant participant)
         {
             var result = _participantDal.Get(p => p.UserId == participant.UserId && p.MyEventId == participant.MyEventId);
