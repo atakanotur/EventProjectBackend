@@ -14,7 +14,7 @@ namespace WebAPI.Controllers
             _userService = userService;
         }
 
-        [HttpGet("getbymyeventId")]
+        [HttpGet("getbymyeventid")]
         public IActionResult GetByMyEventId(int myEventId)
         {
             var result = _userService.GetByMyEventId(myEventId);
