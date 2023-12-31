@@ -55,6 +55,7 @@ namespace Business.Concrete
                 User user = _userDal.Get(u => u.Id == participant.UserId);
                 UserProfileDetailDto userProfileDetail = new UserProfileDetailDto
                 {
+                    UserId = user.Id,
                     FirstName = user.FirstName,
                     LastName = user.LastName,
                     Email = user.Email
